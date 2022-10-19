@@ -1,0 +1,139 @@
+:root {
+    --color-orange: hsl(25, 97%, 53%);
+    --color-White: hsl(0, 0%, 100%);
+    --color-Light-Grey: hsl(217, 12%, 63%);
+    --color-Medium-Grey: hsl(216, 12%, 54%);
+    --color-Dark-Blue: hsl(213, 19%, 18%);
+    --color-Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--color-Very-Dark-Blue);
+    color: var(--color-White);
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating-component {
+    background-color: var(--color-Dark-Blue);
+    width: 450px;
+    height: 450px;
+    /* add box shadow */
+    border-radius: 10%;
+}
+
+.content {
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    font-size: 15px;
+    color: var(--color-Medium-Grey);
+}
+
+.star {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(213, 19%, 30%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .main-title {
+     margin-top: 40px;
+}
+
+.content .description {
+    margin-top: 20px;
+}
+
+.content .row {
+    display: flex;
+}
+.content .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}   
+.col .rating {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(213, 19%, 30%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out all;
+}
+.rating:hover {
+    cursor: pointer;
+    background-color: var(--color-Light-Grey);
+}
+.active {
+    background-color: var(--color-orange)!important;
+}
+.Submitbtn {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    background-color: var(--color-orange);
+    margin-top: 20px;
+    transition: 0.2s ease-in-out all;
+
+}
+
+.Submitbtn:hover {
+    background-color: var(--color-White);
+    color: var(--color-orange);
+}
+
+.attribution {
+    margin-top: 200px;
+}
+.d-none {
+    display: none;
+}
+
+/* thank you start */
+.ty-content {
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    transition: all 0.2s ease-in-out;
+}
+
+.rate {
+    background-color: hsl(213, 19%, 30%);
+    color: var(--color-orange);
+    border-radius: 20px;
+    padding: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.ty-heading {
+    margin-top: 25px;
+}
+
+.ty-paragraph {
+    margin-top: 25px;
+}
