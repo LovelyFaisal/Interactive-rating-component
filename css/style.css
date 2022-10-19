@@ -96,7 +96,6 @@ p {
     background-color: var(--color-orange);
     margin-top: 20px;
     transition: 0.2s ease-in-out all;
-
 }
 
 .Submitbtn:hover {
@@ -137,3 +136,18 @@ p {
 .ty-paragraph {
     margin-top: 25px;
 }
+
+
+/* thank you end */
+
+/* media query start */
+
+@media screen and (max-width: 650px) {
+    .rating-component {
+        width: 320px;
+    }
+    .col .rating {
+        width: 40px;
+        height: 40px;
+    }
+} 
